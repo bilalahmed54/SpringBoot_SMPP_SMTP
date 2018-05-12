@@ -18,6 +18,7 @@
 *.ipr
 *.ipr
 *.class
+*.properties
 /out/
 
 ### NetBeans ###
