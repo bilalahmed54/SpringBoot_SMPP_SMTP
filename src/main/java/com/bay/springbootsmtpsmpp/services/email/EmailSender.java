@@ -1,4 +1,4 @@
-package com.bay.springbootsmtpsmpp.services.EmailSender;
+package com.bay.springbootsmtpsmpp.services.email;
 
 import javax.mail.MessagingException;
 

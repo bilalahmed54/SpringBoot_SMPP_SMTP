@@ -1,11 +1,11 @@
-package com.bay.springbootsmtpsmpp.controller;
+package com.bay.springbootsmtpsmpp.controller.email;
 
 import javax.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.bay.springbootsmtpsmpp.services.EmailSender.EmailSender;
+import com.bay.springbootsmtpsmpp.services.email.EmailSender;
 
 @RestController
 public class EmailController {
@@ -22,7 +22,7 @@ public class EmailController {
     }
 
     //Just for the testing purpose
-    @RequestMapping("/index")
+    @RequestMapping("/email/index")
     public String index() {
         return "Hello World: Welcome to Application: " + appName;
     }

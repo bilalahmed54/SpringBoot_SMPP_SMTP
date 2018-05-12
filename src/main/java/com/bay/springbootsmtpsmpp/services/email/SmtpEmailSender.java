@@ -1,4 +1,4 @@
-package com.bay.springbootsmtpsmpp.services.EmailSender;
+package com.bay.springbootsmtpsmpp.services.email;
 
 import javax.mail.MessagingException;
 import org.apache.commons.logging.Log;
@@ -12,7 +12,7 @@ public class SmtpEmailSender implements EmailSender {
 
     @Autowired
     private JavaMailSender javaMailSender;
-    private static Log log = LogFactory.getLog(MockEmailSender.class);
+    private static Log log = LogFactory.getLog(SmtpEmailSender.class);
 
     @Override
     public void sendEmail(String subject, String body, String toAddress) throws MessagingException {

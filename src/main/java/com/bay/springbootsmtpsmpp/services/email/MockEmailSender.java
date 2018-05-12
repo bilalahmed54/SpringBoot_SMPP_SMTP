@@ -1,4 +1,4 @@
-package com.bay.springbootsmtpsmpp.services.EmailSender;
+package com.bay.springbootsmtpsmpp.services.email;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
