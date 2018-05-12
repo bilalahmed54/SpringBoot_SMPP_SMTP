@@ -1,5 +1,6 @@
 package com.bay.springbootsmtpsmpp.controller;
 
+import javax.mail.MessagingException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,8 @@ public class EmailController {
 
     //Sending actual emails
     @RequestMapping("/sendEmail")
-    public String send() {
+    public String send() throws MessagingException {
+
         emailSender.sendEmail("Test Email", "Test Email Sent via Spring Boot Application", "bilalahmedpu@gmail.com");
         return "Email Sent!";
     }
