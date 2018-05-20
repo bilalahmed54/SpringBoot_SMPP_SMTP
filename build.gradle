@@ -25,6 +25,7 @@ repositories {
 
 dependencies {
     runtime('org.jsmpp:jsmpp:2.3.6')
+    compile('com.twilio.sdk:twilio:7.11.+')
     runtime('org.springframework.boot:spring-boot-devtools')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-starter-mail")

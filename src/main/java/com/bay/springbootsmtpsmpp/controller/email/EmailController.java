@@ -1,13 +1,13 @@
 package com.bay.springbootsmtpsmpp.controller.email;
 
-import com.bay.springbootsmtpsmpp.services.email.EmailSender;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.bay.springbootsmtpsmpp.services.email.EmailSender;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.mail.MessagingException;
 
@@ -17,10 +17,10 @@ public class EmailController {
     @Value("${app.name}")
     String appName;
 
-    private static Log log = LogFactory.getLog(EmailController.class);
-
     //Dependency Injection
     private EmailSender emailSender;
+
+    private static Log log = LogFactory.getLog(EmailController.class);
 
     @Autowired
     public EmailController(EmailSender emailSender) {
